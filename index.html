@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Matchday</title>
+  <meta name="description" content="Live cricket and football scores, timelines, fixtures and players.">
+  <meta name="theme-color" content="#0e1512">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <button class="icon-btn" id="back" aria-label="Back" hidden>&#8592;</button>
+    <h1 id="title">Matchday</h1>
+    <span class="updated" id="updated" aria-live="off"></span>
+    <button class="icon-btn" id="refresh" aria-label="Refresh">&#8635;</button>
+  </header>
+  <main id="view"></main>
+  <nav class="tabs" aria-label="Main">
+    <a href="#/" data-nav="scores"><span class="ic">&#9673;</span>Scores</a>
+    <a href="#/mine" data-nav="mine"><span class="ic">&#9733;</span>My teams</a>
+    <a href="#/follow" data-nav="follow"><span class="ic">&#43;</span>Follow</a>
+  </nav>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
